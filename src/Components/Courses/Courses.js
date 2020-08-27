@@ -3,13 +3,15 @@ import "./Courses.css";
 
 const Courses = (props) => {
     const {title,description,price,author} = props.courses;
-    console.log(title);
+    const handleAddCart = props.handleAddCart;
 
     return (
-        <div>
-          <h2>{title}</h2>
-          <h4>{description}</h4>
-          <h5>${price}</h5>
+        <div className="courseContainer">
+          
+           <h2 className="text-primary">{title}</h2>
+           <h4>{description}</h4>
+           <h5>${price}</h5>
+           <button onClick={()=>{handleAddCart(props.courses)}} className="btn btn-danger">Enroll Now</button>    
         </div>
     );
 };

@@ -1,0 +1,9 @@
+.courseContainer{
+    padding:5rem;
+    border-right:1px solid #d18a8a;
+    width:800px;
+    
+}
+.courseContainer img{
+    width:80%;
+}

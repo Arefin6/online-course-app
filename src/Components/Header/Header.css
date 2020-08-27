@@ -1,0 +1,38 @@
+.header-warp{
+ display: flex;
+ padding: 1rem;
+ width: 100%;
+ margin-bottom:40px;
+}
+.header-left{
+    width:60%;
+    display: flex;
+
+}
+.header-left h3{
+  margin-right:120px;
+  color:#e43b3b;
+  margin-left:20px;
+}
+.header-left .input{
+    width:311px;
+    background-color:#f8a0a0;
+    border: 1px solid #ddd;
+    border-radius:20px;
+    padding:20px;
+    height:30px;
+    text-align: center;
+}
+.input:focus {
+    outline: none;
+    border: 1px solid #a0d18c;
+    color: #2d9fd9;
+}
+.header-right{
+    width:40%;
+}
+.header-right a{
+    padding:5px;
+    text-decoration:none;
+    color:#e43b3b;
+}

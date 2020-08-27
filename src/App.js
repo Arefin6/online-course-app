@@ -16,6 +16,7 @@ function App() {
     const newCart = [...courseCart,courses];
     setCourseCart(newCart);
   }
+  const totalPrice = courseCart.reduce((total,course)=> total+course.price,0)
 
   return (
     <div className="row container">
@@ -27,7 +28,7 @@ function App() {
         <div className="col-md-4">
                <h2>Billing Details</h2>
                <h4>Num of Course {courseCart.length}</h4>
-              <p>Total Price</p>
+           <p>Total Price: {totalPrice}</p>
         </div>
        
       
